@@ -1,0 +1,381 @@
+
+
+/* ARQUITECTURA */
+
+body {
+  font-family: georgia,"times new roman",times,serif;
+  font-size: 90%;
+  color: #333;
+  margin: 0; /*CREA ESPACIO EXTRA ALREDEDOR DE UN ELEMENTO*/
+  padding: 0; /*ES EL ESPACIO ENTRE EL CONTENIDO Y EL BORDE*/
+  background: #fff;
+}
+
+
+#header {   
+  width: 1000px;
+  height: 110px;
+  margin: 0 auto;  /*DIVIDE EL ESPACIO SOBRANTE ENTRE LOS DOS MARGENES*/
+}
+
+#logo {
+ float: left;
+  width: 400px;
+  height: 110px;
+}
+
+
+#nav {
+  width: 980px;
+  height: 40px;
+  margin: 0 auto;
+  background: #355269;
+}
+
+#nav-bottom {
+  width: 978px;
+  height: 42px;
+  margin: 0 auto;
+  background: #f0f0f0 url(../img/nav-bottom-backgr.png) repeat-x;
+  border: 1px solid #d0d0d0;
+  border-top: none;
+}
+
+#sub-nav {
+  width: 980px;
+  height: 45px;
+  margin: 0 auto 10px auto;
+}
+
+#contenedor-principal {
+  width: 980px;
+  min-height: 630px;  /*altura minima del elemento dado*/
+  margin: 0 auto;
+  overflow: hidden; /*los contenidos que sobresalgan se ocultaran*/
+}
+
+#main {
+  float: left;
+  width: 660px;
+  min-height: 630px;
+  margin: 0 20px 0 0;
+}
+
+#titulares {
+  width: 660px;
+  min-height: 300px;
+}
+
+#principal-titular {
+  float: left;
+  width: 400px;
+  min-height: 300px;
+  padding: 0 19px 0 0;
+  border-right: 1px solid #ddd;
+}
+
+#mas-titulares {
+  float: right;
+  width: 220px;
+  min-height: 300px;
+  padding: 0 0 0 20px;
+}
+
+#barras-laterales {
+  float: right;
+  width: 279px;
+  min-height: 630px;
+  padding: 0 0 0 20px;
+  border-left: 1px solid #ddd;
+}
+
+#extras {
+  width: 980px;
+  height: 290px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+}
+
+#recomendaciones {
+  float: left;
+  width: 312px;
+  height: 290px;
+  margin: 0 20px 0 0;
+  padding: 20px 0;
+}
+
+#programas {
+  float: left; /*ubica el elemento en el lado izquierdo del contenedor*/
+  width: 312px;
+  height: 290px;
+  margin: 0 10px 0 0;
+  padding: 20px 0;
+}
+
+#premios {
+  float: left;
+  width: 312px;
+  height: 290px;
+  margin: 0 0 0 10px;
+  padding: 20px 0;
+}
+
+/*  MENU DE ARRIBA */
+
+#top ul {
+  float: right;
+  margin: 18px 0 0 0;
+  padding: 0;
+  list-style: none; /*para no mostrar ningun marcador en la lista de elementos*/
+}
+
+#top li {
+  display: inline; /*me crea el elemento de tipo linea*/
+  font-size: 0.9em;
+  line-height: 1.0em;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+#top li a {
+  color: #355269;
+  text-decoration: none;
+}
+
+#top li a:hover {  /*me dice que pasa con un elemento cuando tenemos el raton sobre él*/
+  color: #000;
+  text-decoration: underline;  /*subraya el elemento*/
+}
+
+/* MAIN NAV MENU */
+
+#nav ul {
+  float: left;
+  margin: 0;
+  padding: 0 10px;
+  list-style: none;
+}
+
+#nav li {
+  display: inline;
+  font-size: 1.0em;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin: 0 29px 0 0;
+  padding: 0;
+}
+
+#nav li.last {
+  margin: 0;
+}
+
+#nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#nav li a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* MAIN SUB-NAV MENU */
+
+#sub-nav ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sub-nav li {
+  display: inline;
+  font-size: 0.9em;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #666;
+  margin: 0 15px 0 0;
+  padding: 0;
+}
+
+#sub-nav li a {
+  color: #000;
+  text-decoration: none;
+}
+
+#sub-nav li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+#sub-nav li.titulo {
+  color:#355269;
+}
+
+/* TIPOGRAFIA */
+
+#titulares h1, #titulares h2, #titulares h3, #titulares h4, #barras-laterales h3 {
+  font-size: 2.3em;
+  font-weight: normal;
+  line-height: 1.0em;
+  letter-spacing: -1px;
+  color: #000;
+  margin: 0 0 6px 0;
+}
+
+#titulares h2, #titulares h3, #barras-laterales h3 {
+  font-size: 1.7em;
+}
+
+#titulares h4 {
+  font-size: 1.3em;
+  line-height: 1.1em;
+}
+
+#titulares h3 {
+  margin: 0 0 4px 0;
+  padding: 12px 0 0 0;
+  border-top: 1px solid #ddd;
+}
+
+#titulares h1 a, #titulares h2 a, #titulares h3 a, #titulares h4 a, #titulares h3 a {
+  color: #000;
+  text-decoration: none;
+}
+
+#titulares h1 a:hover, #titulares h2 a:hover, #titulares h3 a:hover, #titulares h4 a:hover, #titulares h3 a:hover {
+  color: #355269;
+  text-decoration: underline;
+}
+
+#titulares h2.titulo, #barras-laterales h2.titulo {
+  font: bold 0.8em arial,verdana,tahoma,sans-serif;
+  line-height: 1.0em;
+  letter-spacing: 0px; /*espacio adicional entre caracteres*/
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 7px 6px 6px 6px;
+  background: #355269;
+}
+
+
+#barras-laterales h4 {
+  font: bold 1.0em arial,verdana,tahoma,sans-serif;
+  line-height: 1.2em;
+  margin: 0 0 9px 0;
+  padding: 5px 0 0 0;
+}
+
+#barras-laterales h4 a {
+  color:#355269;
+  text-decoration: none;
+}
+
+#barras-laterales h4 a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+#main p, #barras-laterales p {
+  font-size: 1.0em;
+  line-height: 1.4em;
+  margin: 0 0 16px 0;
+}
+
+#main p.autor, #barras-laterales p.autor {
+  font: bold 0.8em arial,verdana,tahoma,sans-serif;
+  line-height: 1.0em;
+  margin: 0 0 10px 0;
+  color: #999;
+}
+
+#main p.autor span, #barras-laterales p.autor span {
+  color: #2c6fae;
+}
+
+#main p a, #barras-laterales p a {
+  color: #355269;
+  text-decoration: none;
+}
+
+#main p a:hover, #barras-laterales p a:hover {
+  color:#355269;
+  text-decoration: underline;
+}
+
+#extras h2.titulo {
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1.0em;
+  letter-spacing: -1px;
+  color: #000;
+  margin: 0;
+  padding: 10px 0;
+  border-top: 4px solid #000;
+  border-bottom: 1px solid #ddd;
+}
+
+#extras ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#extras li {
+  font-size: 1.0em;
+  line-height: 1.3em;
+  margin: 0;
+  padding: 9px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+#extras li.last {
+  padding: 6px 0 0 0;
+  border-bottom: none;
+}
+
+#extras li a {
+  color: #355269;
+  text-decoration: none;
+}
+
+#extras li a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* IMAGENES */
+
+#logo img {
+  border: 0;
+}
+
+#sub-nav img {
+  margin: 0 5px 0 0;
+  border: 0;
+  vertical-align: middle;
+}
+
+#principal-titular img {
+  margin: 0 0 6px 0;
+  border: 0;
+}
+
+#main img.lefty {
+  float: left;
+  margin: 0 10px 0 0;
+  border: 0;
+}
+
+#main img.righty {
+  float: right;
+  margin: 0 0 0 10px;
+  border: 0;
+} 
+
+#extras img {
+  margin: 8px 0 0 0;
+  border: 0;
+}
+

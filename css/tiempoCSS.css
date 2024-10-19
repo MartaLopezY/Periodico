@@ -1,0 +1,170 @@
+
+
+/* ARQUITECTURA */
+
+body {
+  font-family: georgia,"times new roman",times,serif;
+  font-size: 90%;
+  width: 1000px;
+  color: #333;
+  margin: 0 auto; /*CREA ESPACIO EXTRA ALREDEDOR DE UN ELEMENTO*/
+  padding: 0; /*ES EL ESPACIO ENTRE EL CONTENIDO Y EL BORDE*/
+  background: #fff;
+}
+
+
+#header {   
+  width: 1000px;
+  height: 110px;
+  margin: 0 auto;  /*DIVIDE EL ESPACIO SOBRANTE ENTRE LOS DOS MARGENES*/
+}
+
+#logo {
+ float: left;
+  width: 400px;
+  height: 110px;
+}
+
+
+#nav {
+  width: 980px;
+  height: 40px;
+  margin: 0 auto;
+  background: #355269;
+}
+
+#nav-bottom {
+  width: 978px;
+  height: 42px;
+  margin: 0 auto;
+  background: #f0f0f0 url(../img/nav-bottom-backgr.png) repeat-x;
+  border: 1px solid #d0d0d0;
+  border-top: none;
+}
+
+
+/*   MENU DE ARRIBA */
+
+#top ul {
+  float: right;
+  margin: 18px 0 0 0;
+  padding: 0;
+  list-style: none; /*para no mostrar ningun marcador en la lista de elementos*/
+}
+
+#top li {
+  display: inline; /*me crea el elemento de tipo linea*/
+  font-size: 0.9em;
+  line-height: 1.0em;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+#top li a {
+  color:#355269;
+  text-decoration: none;
+}
+
+#top li a:hover {  /*me dice que pasa con un elemento cuando tenemos el raton sobre él*/
+  color: #000;
+  text-decoration: underline;  /*subraya el elemento*/
+}
+
+/* MAIN NAV MENU */
+
+#nav ul {
+  float: left;
+  margin: 0;
+  padding: 0 10px;
+  list-style: none;
+}
+
+#nav li {
+  display: inline;
+  font-size: 1.0em;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin: 0 29px 0 0;
+  padding: 0;
+}
+
+#nav li.last {
+  margin: 0;
+}
+
+#nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#nav li a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* TIPOGRAFIA */
+h1{
+  font-size: 2.3em;
+  font-weight: normal;
+  line-height: 1.0em;
+  letter-spacing: -1px;
+  color: #000;
+  margin: 0 0 6px 0;
+}
+
+ h2{
+  font-size: 1.7em;
+  font-weight: normal;
+  line-height: 1.0em;
+  letter-spacing: -1px;
+  color: #000;
+  margin: 0 0 6px 0;
+}
+
+
+ h3 {
+  margin: 0 0 4px 0;
+  padding: 12px 0 0 0;
+  border-top: 1px solid #ddd;
+}
+
+ 
+.contenedor {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.informacion {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.temperatura {
+  font-size: 2em;
+  font-weight: bold;
+  color: #f00;
+}
+
+.descripcion {
+  margin-top: 5px;
+  color: #333;
+}
+.pronostico{
+  font-family: sans-serif;
+  margin-top: 5px;
+  color: #333;
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* IMAGENES */
+
+#logo img {
+  border:0;
+
+}
+
+

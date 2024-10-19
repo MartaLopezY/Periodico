@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/encuestaCSS.css">
+  <title>Encuestas</title>
+
+</head>
+
+<body>
+   <!-- COMIENZO HEADER -->
+<div id="header">    <!-- HEADER SE UTILIZA PARA CONTENER LA INFORMACIÓN DEL ENCABEZADO DEL DOCUMENTO -->
+  <div id="logo"> <a href="#"><img src="img/encuesta.png" alt="" /></a> </div>  <!-- INTRODUZCO LA IMAGEN DEL LOGOTIPO -->
+</div>
+<!-- FIN HEADER -->
+<!-- COMIENZO NAV -->
+<div id="nav">   <!-- NAV SE UTILIZA PARA REPRESENTAR LA SECCIÓN DE UNA PAGINA CUYO PROPOSITO ES PROPORCIONAR ENLACES DE NAVEGACION -->
+  <ul>     
+    <li><a href="index.html">Inicio</a></li>    <!-- ES EL MENU DE ARRIBA -->
+    <li><a href="economia.html">Economia</a></li>
+    <li><a href="ciencias.html">Ciencias</a></li>
+    <li><a href="#">Internacional</a></li>
+    <li><a href="tiempo.html">El tiempo</a></li>
+    <li><a href="#">Entretenimiento</a></li>
+    <li><a href="deportes.html">Deportes</a></li>
+    <li class="last"><a href="actualidad.html">Actualidad</a></li>
+  </ul>
+</div>
+<!-- FIN NAV ---->
+<div class="periodico">
+    <section class="info"></section>
+    <section class="titulo"></section>
+    <h1>
+      <span>¡Participa en nuestra encuesta sobre la atención bancaria!</span>
+    </h1>
+    <section class="contenido">  
+    <img id="encuesta" src="img/encuestaImg.png" />  
+    <div>
+        <h2>CUESTIONARIO SOBRE ATENCIÓN BANCARIA</h2>
+        <h3>Seguimiento del trato bancario a las personas mayores</h3>
+        <p>Queremos identificar las malas prácticas que siguen existiendo desde las entidades bancarias hacia las personas mayores para ponerlas en conocimiento de la Administración y utilizarlas en las conversaciones que desde la Plataforma de Mayores y Pensionistas -PMP, estamos teniendo con la patronal bancaria.</p>
+        <p>Es necesaria la concreción y localización de estas malas prácticas para evitar que la banca difunda noticias sobre la mejora de su trato a las personas mayores si esto no es cierto.</p>  
+        <p> Para ello hemos de ponerles delante el detalle de estas malas prácticas, de la forma más concreta posible, identificando el banco, sucursal, población y qué mala práctica en concreto sigue teniendo con las personas mayores.</p>
+        <p>Solicitamos a las personas mayores que lo deseen que se animen a cumplimentar este cuestionario.  Vuestra ayuda es muy importante para mejorar el trato que la banca tiene con las personas mayores.</p>   
+        <p>¡Gracias!</p>
+    </div>
+<form method="get">
+  <div>
+    <fieldset> 
+      <label for="asociacion">Si participas en alguna asociación o entidad, dinos cuál<br></label>
+      <input type="text" id="asociacion" name="asociacion" placeholder="Tu respuesta"> 
+    </fieldset>
+    <fieldset> 
+      <label for="entidad">Escribe el nombre de la entidad bancaria sobre la que vas a hablar. <br></label>
+      <input type="text" id="entidad" name="entidad" placeholder="Tu respuesta"> 
+    </fieldset>
+    <fieldset> 
+      <label for="entidad">Sucursal (si no se sabe, calle, barrio, localidad donde está)<br></label>
+      <input type="text" id="entidad" name="entidad" placeholder="Tu respuesta"> 
+    </fieldset>
+    <fieldset>Mala práctica que has observado:<br/>
+       <input type="checkbox" name="cierre" value="cierre"/> Cerraron mi oficina; ya no tengo oficina cerca <br>
+       <input type="checkbox" name="no hay indicadores" value="no hay indicadores"/> No hay indicadores de señalización sobre atención personalizada “si eres persona mayor” <br>
+       <input type="checkbox" name="cita previa" value="cita previa" /> Es obligatorio pedir cita previa para que te atiendan <br>
+       <input type="checkbox" name="atencion telefonica" value="atencion telefonica"/>No funciona bien la atención telefónica  <br>
+       <input type="checkbox" name="horario" value="horario"/> El horario de la atención telefónica es reducido (no abarca el horario de 9 a 18 horas) y/o supone un coste<br>
+       <input type="checkbox" name="no preferencia" value="no preferencia"  />No hay trato preferente a las personas mayores de 65 años en casos de alta afluencia<br>
+       <input type="checkbox" name="personal" value="personal"/> El personal que presta atención no tiene información necesaria o desconoce el procedimiento de trato a las personas mayores acordado por la banca<br>
+       <input type="checkbox" name="no ayuda cajeros" value="no ayuda cajeros" /> No ofrecen ayuda para el uso de los cajeros automáticos <br>
+       <input type="checkbox" name="cajeros" value="cajeros"/>Manejo complicado del cajero automático<br>
+       <input type="checkbox" name="espera en calle" value="espera en calle"/> Hacen esperar en la calle<br>
+       <input type="checkbox" name="asientos" value="asientos"/>No hay asientos en la oficina para quienes están esperando turno de atención<br>
+       Otros(específica):<br>  <textarea  name="otros" ></textarea>     
+    </fieldset>
+    <input type="reset" name="borrar" value="Borrar datos del formulario"/>
+    <input type="submit" name="enviar" value="Enviar"/>
+  </div>
+</form>
+</section>
+</div>
+</body>
+</html>
+
