@@ -1,2 +1,2 @@
 # periodico
-periodico digital con html y css
+Periodico digital basado en noticias reales usando unicamente html y css. 
